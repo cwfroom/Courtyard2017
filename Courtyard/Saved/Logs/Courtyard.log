@@ -3476,4 +3476,69 @@ LogInit: Object subsystem initialized
 [2017.09.19-03.45.52:823][131]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
 [2017.09.19-03.46.15:673][844]LogNavigationPoint: PostEditMove Clear paths rebuilt
 [2017.09.19-03.46.17:720][ 89]LogNavigationPoint: PostEditMove Clear paths rebuilt
-[2017.09.19-03.4
+[2017.09.19-03.46.19:150][259]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.09.19-03.46.19:150][259]PIE: New page: PIE session: Test1 (Sep 18, 2017, 12:46:19 PM)
+[2017.09.19-03.46.19:151][259]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_Test1
+[2017.09.19-03.46.19:201][259]LogPlayLevel: PIE: StaticDuplicateObject took: (0.050187s)
+[2017.09.19-03.46.19:230][259]LogAIModule: Creating AISystem for world Test1
+[2017.09.19-03.46.19:230][259]LogPlayLevel: PIE: World Init took: (0.029909s)
+[2017.09.19-03.46.19:231][259]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/Test1.Test1 to /Game/Levels/UEDPIE_0_Test1.Test1 (0.080288s)
+[2017.09.19-03.46.19:311][259]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.09.19-03.46.19:320][259]LogInit: FAudioDevice initialized.
+[2017.09.19-03.46.19:353][259]LogWorld: Game class is 'ThirdPersonGameMode_C'
+[2017.09.19-03.46.19:373][259]LogWorld: Bringing World /Game/Levels/UEDPIE_0_Test1.Test1 up for play (max tick rate 0) at 2017.09.18-20.46.19
+[2017.09.19-03.46.19:374][259]LogWorld: Bringing up level for play took: 0.018868
+[2017.09.19-03.46.19:375][259]LogGameMode:Display: Match State Changed from EnteringMap to WaitingToStart
+[2017.09.19-03.46.19:375][259]LogGameState: Match State Changed from EnteringMap to WaitingToStart
+[2017.09.19-03.46.19:375][259]LogGameMode:Display: Match State Changed from WaitingToStart to InProgress
+[2017.09.19-03.46.19:377][259]LogGameState: Match State Changed from WaitingToStart to InProgress
+[2017.09.19-03.46.19:378][259]PIE: Info Play in editor start time for /Game/Levels/UEDPIE_0_Test1 0.714
+[2017.09.19-03.49.47:657][167]LogSavePackage: Save=170.74ms
+[2017.09.19-03.49.47:657][167]LogSavePackage: Moving '../../../../../../Users/Jiaxin Xu/Desktop/Coutyard Project Folder/Courtyard/Saved/Test1_Auto9156BED534C2263BC9A9665BEA21FE8DF.tmp' to '../../../../../../Users/Jiaxin Xu/Desktop/Coutyard Project Folder/Courtyard/Saved/Autosaves/Game/Levels/Test1_Auto9.umap'
+[2017.09.19-03.49.47:665][167]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Jiaxin Xu/Desktop/Coutyard Project Folder/Courtyard/Saved/Autosaves/Game/Levels/Test1_Auto9.umap
+[2017.09.19-03.49.47:670][167]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Levels/Test1' took 0.212
+[2017.09.19-03.49.47:670][167]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.212
+[2017.09.19-03.50.27:628][941]Cmd: SELECT NONE
+[2017.09.19-05.54.11:191][249]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Levels/Test1" FILE="../../../../../../Users/Jiaxin Xu/Desktop/Coutyard Project Folder/Courtyard/Content/Levels/Test1.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2017.09.19-05.54.11:339][249]LogSavePackage: Save=121.32ms
+[2017.09.19-05.54.11:339][249]LogSavePackage: Moving '../../../../../../Users/Jiaxin Xu/Desktop/Coutyard Project Folder/Courtyard/Saved/Test1A69DF2A54682D675B9F5A9B6B92C0647.tmp' to '../../../../../../Users/Jiaxin Xu/Desktop/Coutyard Project Folder/Courtyard/Content/Levels/Test1.umap'
+[2017.09.19-05.54.11:349][249]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Jiaxin Xu/Desktop/Coutyard Project Folder/Courtyard/Content/Levels/Test1.umap
+[2017.09.19-05.54.11:379][249]LogFileHelpers: Saving map 'Test1' took 0.227
+[2017.09.19-07.21.32:518][564]LogD3D11RHI: Timed out while waiting for GPU to catch up. (500 ms)
+[2017.09.19-07.21.32:857][566]LogHttp:Warning: 0000003646901C00: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.09.19-07.21.32:858][566]LogHttp:Warning: 0000003646901C00: libcurl info message cache 3 (Connection 205 seems to be dead!)
+[2017.09.19-07.21.32:858][566]LogHttp:Warning: 0000003646901C00: libcurl info message cache 4 (Closing connection 205)
+[2017.09.19-07.21.32:858][566]LogHttp:Warning: 0000003646901C00: libcurl info message cache 5 (schannel: shutting down SSL/TLS connection with datarouter.ol.epicgames.com port 443)
+[2017.09.19-07.21.32:858][566]LogHttp:Warning: 0000003646901C00: libcurl info message cache 6 (schannel: clear security context handle)
+[2017.09.19-07.21.32:858][566]LogHttp:Warning: 0000003646901C00: libcurl info message cache 7 (schannel: decremented credential handle refcount = 0)
+[2017.09.19-07.21.32:858][566]LogHttp:Warning: 0000003646901C00: libcurl info message cache 8 (Could not resolve host: datarouter.ol.epicgames.com)
+[2017.09.19-07.21.32:858][566]LogHttp:Warning: 0000003646901C00: libcurl info message cache 9 (Closing connection 206)
+[2017.09.19-08.06.09:193][592]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2017.09.19-08.06.09:233][592]LogWindowsTextInputMethodSystem:Display: IME system now activated using TSF (搜狗拼音输入法).
+[2017.09.19-08.06.16:380][356]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (Sky Sphere)
+[2017.09.19-08.06.28:841][805]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.09.19-08.06.28:842][805]PIE: New page: PIE session: Test1 (Sep 18, 2017, 5:06:28 PM)
+[2017.09.19-08.06.28:861][805]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_Test1
+[2017.09.19-08.06.28:948][805]LogPlayLevel: PIE: StaticDuplicateObject took: (0.086876s)
+[2017.09.19-08.06.28:964][805]LogAIModule: Creating AISystem for world Test1
+[2017.09.19-08.06.28:965][805]LogPlayLevel: PIE: World Init took: (0.017451s)
+[2017.09.19-08.06.28:979][805]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/Test1.Test1 to /Game/Levels/UEDPIE_0_Test1.Test1 (0.118058s)
+[2017.09.19-08.06.29:463][805]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.09.19-08.06.29:470][805]LogInit: FAudioDevice initialized.
+[2017.09.19-08.06.29:504][805]LogWorld: Game class is 'ThirdPersonGameMode_C'
+[2017.09.19-08.06.29:557][805]LogWorld: Bringing World /Game/Levels/UEDPIE_0_Test1.Test1 up for play (max tick rate 0) at 2017.09.19-01.06.29
+[2017.09.19-08.06.29:557][805]LogWorld: Bringing up level for play took: 0.004925
+[2017.09.19-08.06.29:559][805]LogGameMode:Display: Match State Changed from EnteringMap to WaitingToStart
+[2017.09.19-08.06.29:559][805]LogGameState: Match State Changed from EnteringMap to WaitingToStart
+[2017.09.19-08.06.29:559][805]LogGameMode:Display: Match State Changed from WaitingToStart to InProgress
+[2017.09.19-08.06.29:562][805]LogGameState: Match State Changed from WaitingToStart to InProgress
+[2017.09.19-08.06.29:562][805]PIE: Info Play in editor start time for /Game/Levels/UEDPIE_0_Test1 0.908
+[2017.09.19-08.07.13:046][585]LogSavePackage: Save=173.08ms
+[2017.09.19-08.07.13:046][585]LogSavePackage: Moving '../../../../../../Users/Jiaxin Xu/Desktop/Coutyard Project Folder/Courtyard/Saved/LD_WalkableRoofTopsEBB5211E4BD10F16A6F50AAE65FC5019.tmp' to '../../../../../../Users/Jiaxin Xu/Desktop/Coutyard Project Folder/Courtyard/Content/LevelDesignMaterials/LD_WalkableRoofTops.uasset'
+[2017.09.19-08.07.13:065][585]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Jiaxin Xu/Desktop/Coutyard Project Folder/Courtyard/Content/LevelDesignMaterials/LD_WalkableRoofTops.uasset
+[2017.09.19-20.10.58:106][863]LogHttp:Warning: 000000360E5FCB80: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.09.19-20.10.58:106][863]LogHttp:Warning: 000000360E5FCB80: libcurl info message cache 1 (Connection 216 seems to be dead!)
+[2017.09.19-20.10.58:106][863]LogHttp:Warning: 000000360E5FCB80: libcurl info message cache 2 (Closing connection 216)
+[2017.09.19-20.10.58:106][863]LogHttp:Warning: 000000360E5FCB80: libcurl info message cache 3 (schannel: shutting down SSL/TLS connection with datarouter.ol.epicgames.com port 443)
+[2017.09.19-20.10.58:106][863]LogHttp:Warning: 000000360E5FCB80: libcurl info message cache 4 (Send failure: Connection was reset)
+[2017.09.19-20.10.58:106][863]LogHttp:Warning: 000000360E5FCB80: libcurl info message cache 5 (schannel: failed to send close msg: Failed sending data to the peer (bytes written: 
