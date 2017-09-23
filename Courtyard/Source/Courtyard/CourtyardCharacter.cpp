@@ -16,6 +16,8 @@ void ACourtyardCharacter::BeginPlay()
 {
 	Super::BeginPlay();
 	
+	movementEnabled = true;
+	hookedToLedge = false;
 }
 
 // Called every frame
@@ -30,5 +32,18 @@ void ACourtyardCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInput
 {
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
 
+}
+
+void ACourtyardCharacter::EnableMovement() {
+	movementEnabled = true;
+
+}
+
+void ACourtyardCharacter::DisableMovement() {
+	movementEnabled = false;
+}
+
+bool ACourtyardCharacter::IsMovementEnabled() {
+	return movementEnabled;
 }
 

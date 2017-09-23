@@ -6,7 +6,7 @@
 #include "GameFramework/Character.h"
 #include "CourtyardCharacter.generated.h"
 
-UCLASS()
+UCLASS(Blueprintable)
 class COURTYARD_API ACourtyardCharacter : public ACharacter
 {
 	GENERATED_BODY()
@@ -26,6 +26,20 @@ public:
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
+
+	/*Setters and Getters*/
+	UFUNCTION(BlueprintCallable, Category="Character")
+	void EnableMovement();
+	UFUNCTION(BlueprintCallable, Category = "Character")
+	void DisableMovement();
+	UFUNCTION(BlueprintCallable, Category = "Character")
+	bool IsMovementEnabled();
+	
+private:
+	bool movementEnabled;
+	bool hookedToLedge;
+
+	
 	
 	
 };
