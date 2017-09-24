@@ -47,3 +47,15 @@ bool ACourtyardCharacter::IsMovementEnabled() {
 	return movementEnabled;
 }
 
+
+void ACourtyardCharacter::HookToLedge() {
+	isHookedToEdge = true;
+}
+
+void ACourtyardCharacter::ReleaseFromLedge() {
+	IsHookedToLedge = false;
+}
+
+bool ACourtyardCharacter::IsHookedToLedge() {
+	return hookedToLedge;
+}

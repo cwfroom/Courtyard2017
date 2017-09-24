@@ -35,6 +35,13 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "Character")
 	bool IsMovementEnabled();
 	
+	UFUNCTION(BlueprintCallable, Category = "Character")
+	void HookToLedge();
+	UFUNCTION(BlueprintCallable, Category = "Character")
+	void ReleaseFromLedge();
+	UFUNCTION(BlueprintCallable, Category = "Character")
+	bool IsHookedToLedge();
+
 private:
 	bool movementEnabled;
 	bool hookedToLedge;
