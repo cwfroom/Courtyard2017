@@ -28,12 +28,6 @@ public:
 
 
 	/*Setters and Getters*/
-	UFUNCTION(BlueprintCallable, Category="Character")
-	void EnableMovement();
-	UFUNCTION(BlueprintCallable, Category = "Character")
-	void DisableMovement();
-	UFUNCTION(BlueprintCallable, Category = "Character")
-	bool IsMovementEnabled();
 	
 	UFUNCTION(BlueprintCallable, Category = "Character")
 	void HookToLedge();

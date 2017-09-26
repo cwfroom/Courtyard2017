@@ -34,26 +34,14 @@ void ACourtyardCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInput
 
 }
 
-void ACourtyardCharacter::EnableMovement() {
-	movementEnabled = true;
-
-}
-
-void ACourtyardCharacter::DisableMovement() {
-	movementEnabled = false;
-}
-
-bool ACourtyardCharacter::IsMovementEnabled() {
-	return movementEnabled;
-}
 
 
 void ACourtyardCharacter::HookToLedge() {
-	isHookedToEdge = true;
+	hookedToLedge = true;
 }
 
 void ACourtyardCharacter::ReleaseFromLedge() {
-	IsHookedToLedge = false;
+	hookedToLedge = false;
 }
 
 bool ACourtyardCharacter::IsHookedToLedge() {
