@@ -38,6 +38,7 @@ void ACourtyardCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInput
 
 void ACourtyardCharacter::HookToLedge() {
 	hookedToLedge = true;
+	
 }
 
 void ACourtyardCharacter::ReleaseFromLedge() {
