@@ -19,6 +19,9 @@ protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
+	FVector mMovementLowerBorder;
+	FVector mMovementHigherBorder;
+
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
@@ -30,11 +33,13 @@ public:
 	/*Setters and Getters*/
 	
 	UFUNCTION(BlueprintCallable, Category = "Character")
-	void HookToLedge();
+	void HookToLedge(FVector position, FVector scale);
 	UFUNCTION(BlueprintCallable, Category = "Character")
 	void ReleaseFromLedge();
 	UFUNCTION(BlueprintCallable, Category = "Character")
 	bool IsHookedToLedge();
+	UFUNCTION(BlueprintCallable, Category = "Character")
+	bool WithinConstriant();
 
 private:
 	bool movementEnabled;

@@ -36,9 +36,14 @@ void ACourtyardCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInput
 
 
 
-void ACourtyardCharacter::HookToLedge() {
+void ACourtyardCharacter::HookToLedge(FVector position, FVector scale) {
 	hookedToLedge = true;
-	
+	//Each scale when set to default size is 50 units, don't change trigger size in blueprint
+	float scaleRatio = 50;
+	FVector scaleRatioVec = FVector(scaleRatio, scaleRatio, scaleRatio);
+	mMovementLowerBorder = position - scaleRatioVec;
+
+
 }
 
 void ACourtyardCharacter::ReleaseFromLedge() {
@@ -47,4 +52,16 @@ void ACourtyardCharacter::ReleaseFromLedge() {
 
 bool ACourtyardCharacter::IsHookedToLedge() {
 	return hookedToLedge;
+}
+
+bool ACourtyardCharacter::WithinConstriant() {
+	if (!hookedToLedge) {
+		return true;
+	}
+	else {
+		return false;
+
+	}
+
+
 }
