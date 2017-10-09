@@ -40,10 +40,13 @@ void ACourtyardCharacter::HookToLedge(FVector position, FVector scale) {
 	hookedToLedge = true;
 	//Each scale when set to default size is 50 units, don't change trigger size in blueprint
 	float scaleRatio = 50;
-	FVector scaleRatioVec = FVector(scaleRatio, scaleRatio, scaleRatio);
-	mMovementLowerBorder = position - scaleRatioVec;
+	//FVector scaleRatioVec = FVector(scaleRatio, scaleRatio, scaleRatio);
+	mMovementLowerBorder = position - (scaleRatio * scale);
+	mMovementHigherBorder = position + (scaleRatio * scale);
 
-
+	//FHitResult f;
+	//K2_SetActorLocation(position, false,f,true);
+	
 }
 
 void ACourtyardCharacter::ReleaseFromLedge() {
@@ -59,9 +62,14 @@ bool ACourtyardCharacter::WithinConstriant() {
 		return true;
 	}
 	else {
-		return false;
+		if (GetActorLocation().X < mMovementLowerBorder.X) {
+			return false;
+		}
+		else {
+			return true;
+		}
 
 	}
 
-
+	
 }
