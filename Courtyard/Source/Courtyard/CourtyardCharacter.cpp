@@ -1,7 +1,7 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 #include "CourtyardCharacter.h"
-
+#include "GameFramework/CharacterMovementComponent.h"
 
 // Sets default values
 ACourtyardCharacter::ACourtyardCharacter()
@@ -40,13 +40,23 @@ void ACourtyardCharacter::HookToLedge(FVector position, FVector scale) {
 	hookedToLedge = true;
 	//Each scale when set to default size is 50 units, don't change trigger size in blueprint
 	float scaleRatio = 50;
-	//FVector scaleRatioVec = FVector(scaleRatio, scaleRatio, scaleRatio);
-	mMovementLowerBorder = position - (scaleRatio * scale);
-	mMovementHigherBorder = position + (scaleRatio * scale);
 
-	//FHitResult f;
-	//K2_SetActorLocation(position, false,f,true);
-	
+	float xEdge = position.X - scaleRatio * scale.X;
+
+	mLedgeLowerY = position.Y - scaleRatio * scale.Y;
+	mLedgeHigherY = position.Y + scaleRatio * scale.Y;
+
+
+	UCharacterMovementComponent* mov = GetCharacterMovement();
+	mov->StopActiveMovement();
+	mov->DisableMovement();
+
+	/*
+	FVector hookPosition = FVector(xEdge, GetActorLocation().Y, position.Z);
+
+	FHitResult f;
+	K2_SetActorLocation(hookPosition, false,f,true);
+	*/
 }
 
 void ACourtyardCharacter::ReleaseFromLedge() {
@@ -62,14 +72,11 @@ bool ACourtyardCharacter::WithinConstriant() {
 		return true;
 	}
 	else {
-		if (GetActorLocation().X < mMovementLowerBorder.X) {
-			return false;
-		}
-		else {
+		if (GetActorLocation().Y > mLedgeLowerY && GetActorLocation().Y < mLedgeHigherY) {
 			return true;
 		}
-
+		else {
+			return false;
+		}
 	}
-
-	
 }
