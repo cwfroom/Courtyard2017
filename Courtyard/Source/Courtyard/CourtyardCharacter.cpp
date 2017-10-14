@@ -61,6 +61,7 @@ void ACourtyardCharacter::HookToLedge(FVector position, FVector scale) {
 
 void ACourtyardCharacter::ReleaseFromLedge() {
 	hookedToLedge = false;
+	
 }
 
 bool ACourtyardCharacter::IsHookedToLedge() {
