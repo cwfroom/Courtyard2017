@@ -81,3 +81,26 @@ bool ACourtyardCharacter::WithinConstriant() {
 		}
 	}
 }
+
+FVector ACourtyardCharacter::GetAxisDirection(FVector dir) {
+	//FVector result;
+	if (FGenericPlatformMath::Abs(dir.X) > FGenericPlatformMath::Abs(dir.Y)) {
+			if (dir.X > 0) {
+				return FVector(1, 0, 0);
+			}
+			else {
+				return FVector(-1, 0, 0);
+			}
+	}else {
+		if (dir.Y > 0) {
+			return FVector(0, 1, 0);
+		}
+		else {
+			return FVector(0, -1, 0);
+		}
+
+	}
+	
+}
+
+
